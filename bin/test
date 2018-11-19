@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source './bin/strict-mode.sh'
+
+NODE_ENV=${NODE_ENV:-TEST}
+
+yarn jest -- --watch

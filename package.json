@@ -1,0 +1,33 @@
+{
+  "name": "barebones-ts",
+  "version": "1.0.0",
+  "description": "Barebones ts-node script",
+  "scripts": {
+    "start": "bin/ts-node index.ts",
+    "test": "bin/test"
+  },
+  "dependencies": {
+    "@types/jest": "^q23.3.9",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.4",
+    "ts-node": "^7.0.1",
+    "tsconfig-paths": "^3.7.0",
+    "typescript": "^3.1.6"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": [
+      "<rootDir>/**/?(*.)test.ts"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "./tsconfig.json"
+      }
+    }
+  }
+}
